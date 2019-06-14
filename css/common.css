@@ -1,0 +1,109 @@
+@charset "utf-8";
+/* Rule
+=========================================================
+- Marginは基本的にTopにつける。
+=========================================================
+*/
+
+/* base
+========================================================= */
+body {
+  color: #333;
+  font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','メイリオ', Meiryo,'ＭＳ Ｐゴシック','MS PGothic';
+  line-height: 1.5; }
+/*body {
+  color: #444;
+  font-family: 'Lucida Grande','segoe UI','游ゴシック',YuGothic,'メイリオ',Meiryo,Arial,sans-serif;
+  line-height: 1.8}*/
+img {
+  max-width: 100%; }
+a {
+  color: #1967d2; }
+a:hover { text-decoration: underline;transition: .3s }
+
+
+
+/* Fonts
+========================================================= */
+.cl_green { color: #2B8239; }
+.cl_yellow { color: #FCD331; }
+.cl_orange { color: #dd6217; }
+.cl_beige { color: #F1EDE6; }
+.cl_red { color: #DD1717; }
+.marker {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ffea73));
+  background: linear-gradient(transparent 60%, #ffea73 60%); }
+
+button {
+  border: none; }
+button:hover {
+ cursor: pointer; }
+
+
+/*GLOBAL HEADER
+========================================================= */
+/*header*/
+header.globalheader {
+
+}
+
+
+/* breadcrumb */
+.breadcrumb {
+  background: #fff;
+  font-size: 10px;
+  margin: 0 -15px;
+  padding: 6px 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch; }
+
+.breadcrumb li {
+    list-style: none;
+    display: inline; }
+.breadcrumb li + li:before {
+      content: "\f054";
+      color: #b5d2ba;
+      margin: 0 .5em;
+    }
+  @media (min-width: 576px) {
+    .breadcrumb {
+      background: none;
+      font-size: 11px;
+      overflow: visible;
+      white-space: normal;
+      padding: 1em 0; }
+    }
+  @media (min-width: 768px) {
+    .breadcrumb {
+      margin: 0; }
+    }
+
+
+/* GLOBAL FOOTER
+========================================================= */
+footer.globalfooter {
+ /* position: relative;*/
+  margin-top: 40px; }
+
+/* 戻るボタン */
+.pagetop {
+  display: none;
+  position: fixed;
+  bottom: 3em;
+  right: 3em;
+}
+.pagetop a {
+  display: block;
+}
+.pagetop a:hover {
+  display: block;
+  text-decoration: none;
+}
+.fa-arrow-circle-up {
+color: #000;
+opacity: 0.5;
+}
+.fa-arrow-circle-up:hover {
+color: #7EC529;
+}
